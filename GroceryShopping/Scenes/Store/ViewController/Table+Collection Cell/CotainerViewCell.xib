@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CollectionCell" reuseIdentifier="CollectionCell" id="gTV-IL-0wX" customClass="CotainerViewCell" customModule="GroceryShopping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5rz-HQ-glT">
+                        <rect key="frame" x="10" y="6.5" width="50" height="49.5"/>
+                        <color key="tintColor" name="PrimaryButtonColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="JhJ-ci-pv4"/>
+                            <constraint firstAttribute="height" constant="50" id="i7m-mk-pgh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRp-wC-5h1">
+                        <rect key="frame" x="8" y="54" width="54" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                        <color key="textColor" name="secoundryTitleButton"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oRp-wC-5h1" secondAttribute="trailing" constant="8" id="4OI-Ob-FgO"/>
+                <constraint firstItem="oRp-wC-5h1" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="9yb-x6-hjz"/>
+                <constraint firstItem="oRp-wC-5h1" firstAttribute="top" secondItem="5rz-HQ-glT" secondAttribute="bottom" constant="-3" id="N6G-hl-U6A"/>
+                <constraint firstItem="oRp-wC-5h1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="OQt-WL-GsW"/>
+                <constraint firstItem="5rz-HQ-glT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Oov-jb-ll1"/>
+                <constraint firstItem="5rz-HQ-glT" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-3" id="omY-H3-Alh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="categoryImage" destination="5rz-HQ-glT" id="xyx-HS-gls"/>
+                <outlet property="categoryTitleLabel" destination="oRp-wC-5h1" id="kfH-Ow-L0N"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="PrimaryButtonColor">
+            <color red="0.16099999845027924" green="0.75700002908706665" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secoundryTitleButton">
+            <color red="0.4309999942779541" green="0.47499999403953552" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
